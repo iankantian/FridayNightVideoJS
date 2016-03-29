@@ -3,30 +3,47 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>VideoJS Ex...</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <script src="js/main.js"></script>
+        <link href="http://vjs.zencdn.net/5.8.6/video-js.css" rel="stylesheet">
+        <!-- IE8 support for video.js -->
+        <!--<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>-->
+        <link href="//vjs.zencdn.net/5.8.6/video-js.min.css" rel="stylesheet">
+        <script src="//vjs.zencdn.net/5.8.6/video.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <!-- This is Hardcoded, so it's not a playlist you can select from... -->
+        <p>VideoJS Example!</p>
+
+        <!--<video id="my-video" class="video-js" controls preload="auto">-->
+        <video id="my-video" class="video-js" controls preload="auto" width="568" height="320">
+               poster="../assets/img/All_Cute.jpg" data-setup="{}">
+            <source src="../assets/video/All_Cute.mp4" type='video/mp4'>
+            <source src="../assets/video/All_Cute.webm" type='video/webm'>
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a web browser that
+                <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+            </p>
+        </video>
+
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <!--<script src="http://vjs.zencdn.net/5.8.6/video.js"></script>-->
+
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
